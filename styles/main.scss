@@ -1,0 +1,23 @@
+$primaryColor:linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+$IkkinchiColor: #30C88F;
+$UchinchiColor:#2D314D;
+$tortinchiColor:#9597A5;
+
+@import 'extastyle';
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+a{
+    @include linkButtonPrimary ()
+}
