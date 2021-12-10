@@ -1,8 +1,8 @@
 $primaryColor:linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
 $IkkinchiColor: #30C88F;
 $UchinchiColor:#2D314D;
-$tortinchiColor:#9597A5;
-
+$tortinchiColor:#7c7d88;
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;1,300&display=swap');
 @import 'extastyle';
 
 
@@ -18,6 +18,43 @@ $tortinchiColor:#9597A5;
     width: 100%;
     margin: 0 auto;
 }
-a{
+
+body{
+    font-family: 'Public Sans', sans-serif;
+}
+
+header{
+    padding: 250px 0px 170px;
+    background-color: #F2F2F2;
+    background: url(../source/header/background.svg) no-repeat right;
+}
+
+.header-navigation{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 18px 0px;
+
+}
+
+.header-navigation .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-navigation-links a{
+    padding: 10px 35px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.107692px;
+    color: #9597A5;
+    text-decoration: none;
+}
+
+.header-navigation-button a{
     @include linkButtonPrimary ()
 }
+
